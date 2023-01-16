@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/arri-PhotoBox/static/css/main.e6c13ad2.css",
-    "main.js": "/arri-PhotoBox/static/js/main.1c533100.js",
+    "main.js": "/arri-PhotoBox/static/js/main.df498cb2.js",
     "static/media/search.svg": "/arri-PhotoBox/static/media/search.f7a26ab2c1e6ae877b07de2d73c3ff06.svg",
     "index.html": "/arri-PhotoBox/index.html",
     "main.e6c13ad2.css.map": "/arri-PhotoBox/static/css/main.e6c13ad2.css.map",
-    "main.1c533100.js.map": "/arri-PhotoBox/static/js/main.1c533100.js.map"
+    "main.df498cb2.js.map": "/arri-PhotoBox/static/js/main.df498cb2.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.1c533100.js"
+    "static/js/main.df498cb2.js"
   ]
 }
