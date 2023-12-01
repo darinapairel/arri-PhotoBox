@@ -1,6 +1,5 @@
-import * as S from './styles'
-
-import {Layout} from './components/Layout/Layout'
+import { Layout } from "./components/Layout/Layout";
+import * as S from "./styles";
 
 function App() {
   return (

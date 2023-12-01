@@ -5,4 +5,4 @@ export const App = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-`
+`;

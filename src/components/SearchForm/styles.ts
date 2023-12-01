@@ -7,8 +7,7 @@ export const Input = styled.input`
   border-radius: 10px;
   padding: 10px 0 10px 25px;
   height: 100%;
-
-`
+`;
 export const Submit = styled.button`
   outline: none;
   border: none;
@@ -18,8 +17,8 @@ export const Submit = styled.button`
   width: 45px;
   height: inherit;
   background: transparent;
-`
+`;
 export const Form = styled.form`
   width: 100%;
   height: 45px;
-`
+`;
