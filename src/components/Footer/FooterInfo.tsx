@@ -10,11 +10,16 @@ interface Iinfo {
 }
 
 export const FooterInfo = ({ info }: { [index: string]: any }) => {
-  useEffect(() => console.log(info));
+  // const { id, date, title, tags, author } = info;
   const titles: (keyof Iinfo)[] = ["date", "title", "tag", "author"];
+  useEffect(() => console.log(info, titles, info.tag, info["tag"]));
+
   return (
     <S.Wrapper>
-      {titles.map((i: string) => (
+      {/* <S.Item className={'id'}>
+        
+      </S.Item> */}
+      {titles?.map((i: string) => (
         <S.Item className={i}>
           {i === "tag"
             ? info.tag.map((t: string) => <S.Tag>{t}</S.Tag>)

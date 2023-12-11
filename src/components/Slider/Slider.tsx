@@ -5,10 +5,22 @@ import * as S from "./styles";
 type Photo = {
   photos: {
     id: number;
-  } & { [k: string]: string }[];
+    name: string;
+    src: string;
+    alt: string;
+    date?: string;
+    title?: string;
+    tags?: string[];
+    author?: string;
+  }[];
+  // photos: {
+  //   id: number;
+  // } & { [k: string]: string }[];
 };
 
 export const Slider: React.FC<Photo> = ({ photos }) => {
+  // const { id, date, title, tags, author } = photos ?? "";
+  // console.log(id, author);
   const slideRef = React.createRef<HTMLLIElement>();
   const slidesContainerRef = React.createRef<HTMLUListElement>();
 
@@ -67,11 +79,25 @@ export const Slider: React.FC<Photo> = ({ photos }) => {
         id="slides-container"
         ref={slidesContainerRef}
       >
-        {photos.map(({ src, alt, id }) => {
+        {photos.map(({ src, alt, id, date, title, tags, author }) => {
+          console.log(date); //`${new Date(date)}`,
           return (
-            <S.Slide key={id} className="slide" ref={slideRef}>
-              <S.ImgPhoto src={src} alt={alt} />
-            </S.Slide>
+            <>
+              <S.Slide key={id} className="slide" ref={slideRef}>
+                <S.ImgPhoto src={src} alt={alt} />
+
+                <S.Subtitle
+                  key={id}
+                  info={{
+                    id: id,
+                    date: date, //add mask for date
+                    title: title,
+                    tag: tags,
+                    author: author,
+                  }}
+                />
+              </S.Slide>
+            </>
           );
         })}
       </S.SlidesContainer>

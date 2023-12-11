@@ -1,5 +1,7 @@
 import styled, { css } from "styled-components";
 
+import { FooterInfo } from "../Footer/FooterInfo";
+
 export const SliderWrapper = styled.section`
   margin: 1rem;
   position: relative;
@@ -53,6 +55,7 @@ export const Slide = styled.li`
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   flex: 1 0 100%;
 `;
 export const ImgPhoto = styled.img`
@@ -61,3 +64,7 @@ export const ImgPhoto = styled.img`
   margin: auto;
 `;
 export const Content = styled.div``;
+
+export const Subtitle = styled(FooterInfo)`
+  margin-top: 81px;
+`;
